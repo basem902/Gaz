@@ -74,26 +74,7 @@ function initScrollAnimations() {
         observer.observe(el);
     });
 
-    // Counter animation for stats (if needed)
-    const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-        const target = parseInt(counter.getAttribute('data-target'));
-        const increment = target / 100;
-        let current = 0;
-        
-        const updateCounter = () => {
-            if (current < target) {
-                current += increment;
-                counter.textContent = Math.ceil(current);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.textContent = target;
-            }
-        };
-        
-        observer.observe(counter);
-        counter.addEventListener('animated', updateCounter);
-    });
+
 }
 
 
@@ -545,36 +526,7 @@ function initAdvancedAnimations() {
         }
     });
     
-    // Counter animation
-    const counters = document.querySelectorAll('.counter');
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-            }
-        });
-    });
-    
-    counters.forEach(counter => {
-        counterObserver.observe(counter);
-    });
-}
 
-function animateCounter(counter) {
-    const target = parseInt(counter.getAttribute('data-target')) || 100;
-    const duration = 2000;
-    const step = target / (duration / 16);
-    let current = 0;
-    
-    const timer = setInterval(() => {
-        current += step;
-        if (current >= target) {
-            counter.textContent = target;
-            clearInterval(timer);
-        } else {
-            counter.textContent = Math.floor(current);
-        }
-    }, 16);
 }
 
 // Google Analytics (if needed)
