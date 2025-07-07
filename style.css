@@ -85,13 +85,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.8rem;
-    background: var(--gradient-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary-color);
     font-weight: 900;
-    text-shadow: 0 3px 6px rgba(74, 144, 226, 0.5);
-    filter: drop-shadow(0 4px 8px rgba(74, 144, 226, 0.3));
+    text-shadow: 0 3px 6px rgba(0, 44, 95, 0.3);
 }
 
 h2 {
@@ -117,6 +113,11 @@ h3 {
     color: var(--primary-color);
 }
 
+h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
 p {
     margin-bottom: 1rem;
     color: var(--dark-gray);
@@ -124,7 +125,7 @@ p {
     font-size: 1.05rem;
 }
 
-/* Company subtitle specific styling */
+/* Company subtitle */
 .company-subtitle {
     font-size: 0.9rem;
     color: var(--dark-gray);
@@ -535,11 +536,12 @@ p {
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    font-weight: 900;
+    text-shadow: 0 3px 6px rgba(0, 44, 95, 0.3);
     margin-bottom: 1rem;
-    color: var(--white);
-    animation: heroTitleGlow 3s ease-in-out infinite alternate;
-    position: relative;
+    line-height: 1.2;
 }
 
 @keyframes heroTitleGlow {
@@ -553,8 +555,10 @@ p {
 
 .hero-subtitle {
     font-size: 1.2rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+    line-height: 1.6;
     margin-bottom: 2rem;
-    color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-buttons {
@@ -701,15 +705,11 @@ p {
 }
 
 .section-header h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    color: var(--primary-color);
     margin-bottom: 1rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 800;
-    text-shadow: 0 2px 4px rgba(44, 85, 48, 0.3);
-    position: relative;
+    font-weight: 700;
+    text-align: center;
 }
 
 .section-header p {
@@ -717,6 +717,7 @@ p {
     color: var(--dark-gray);
     margin-bottom: 2rem;
     font-weight: 400;
+    text-align: center;
 }
 
 /* About Section */
@@ -733,39 +734,17 @@ p {
 }
 
 .about-text h3 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
     color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    color: var(--dark-gray);
     line-height: 1.8;
-    margin-bottom: 2rem;
-    background: var(--gradient-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 700;
-    text-shadow: 0 2px 4px rgba(74, 144, 226, 0.4);
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 1.2rem 1.5rem;
-    border-radius: 12px;
-    border-left: 5px solid var(--primary-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    position: relative;
-    overflow: hidden;
-}
-
-.about-text p::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, transparent 0%, rgba(74, 144, 226, 0.1) 50%, transparent 100%);
-    pointer-events: none;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
 }
 
 .features {
@@ -787,8 +766,10 @@ p {
 }
 
 .feature h4 {
-    margin-bottom: 0.5rem;
     color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
 .feature p {
@@ -991,7 +972,8 @@ p {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 40px;
-    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* Testimonials */
@@ -1027,11 +1009,13 @@ p {
     font-style: italic;
     margin-bottom: 1.5rem;
     color: var(--dark-gray);
+    line-height: 1.7;
 }
 
 .client-info h4 {
     color: var(--primary-color);
     margin-bottom: 0.25rem;
+    font-weight: 700;
 }
 
 .client-info span {
@@ -1167,13 +1151,16 @@ p {
 }
 
 .contact-item h4 {
-    margin-bottom: 0.5rem;
     color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .contact-item p {
-    margin: 0;
     color: var(--dark-gray);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .contact-form {
@@ -1214,13 +1201,10 @@ p {
 }
 
 .contact-cta h3 {
-    color: var(--white);
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-size: 1.6rem;
     font-weight: 700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 2;
+    margin-bottom: 1rem;
 }
 
 .contact-cta p {
@@ -1786,13 +1770,17 @@ p {
     }
     
     .hero-title {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        color: var(--primary-color);
+        text-shadow: 0 2px 4px rgba(0, 44, 95, 0.3);
+        font-weight: 900;
     }
     
     .hero-subtitle {
-        font-size: 1rem;
-        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        color: var(--dark-gray);
+        font-weight: 500;
+        line-height: 1.6;
     }
     
     .hero-buttons {
@@ -1898,12 +1886,13 @@ p {
         font-size: 2.2rem;
         color: var(--primary-color);
         text-shadow: 0 2px 4px rgba(0, 44, 95, 0.3);
+        font-weight: 900;
     }
     
     h2 {
         font-size: 1.8rem;
         color: var(--primary-color);
-        text-shadow: 0 1px 3px rgba(0, 44, 95, 0.2);
+        font-weight: 700;
     }
     
     h3 {
@@ -1922,85 +1911,83 @@ p {
         font-size: 1.1rem;
         color: var(--dark-gray);
         line-height: 1.8;
-        font-weight: 500;
+        font-weight: 400;
     }
     
     .section-header h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: var(--primary-color);
-        text-shadow: 0 1px 3px rgba(0, 44, 95, 0.2);
+        font-weight: 700;
         margin-bottom: 1rem;
     }
     
     .section-header p {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
     
     .company-subtitle {
         font-size: 0.85rem;
         color: var(--dark-gray);
-        font-weight: 600;
+        font-weight: 500;
     }
     
     .service-item h3 {
         font-size: 1.3rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     .service-item p {
-        font-size: 1rem;
+        font-size: 0.95rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
     
     .footer-logo h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: var(--primary-color);
         font-weight: 700;
     }
     
     .contact-item h4 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: var(--primary-color);
         font-weight: 700;
     }
     
     .contact-item p {
-        font-size: 1rem;
+        font-size: 0.95rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
     }
     
     .about-text h3 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     .about-text p {
-        font-size: 1.05rem;
+        font-size: 1rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.8;
     }
     
     .feature h4 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: var(--primary-color);
         font-weight: 700;
     }
     
     .feature p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
     
@@ -2008,13 +1995,12 @@ p {
         font-size: 1.5rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     .testimonial p {
         font-size: 0.95rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
     
@@ -2027,7 +2013,7 @@ p {
     .client-info span {
         font-size: 0.85rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
     }
     
     .gallery-overlay h4 {
@@ -2039,20 +2025,19 @@ p {
     .gallery-overlay p {
         font-size: 0.85rem;
         color: rgba(255, 255, 255, 0.9);
-        font-weight: 500;
+        font-weight: 400;
     }
     
     .contact-cta h3 {
         font-size: 1.3rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     .contact-cta p {
         font-size: 1rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
 }
@@ -2072,11 +2057,11 @@ p {
     .hero-subtitle {
         font-size: 1.1rem;
         color: var(--dark-gray);
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.6;
     }
     
-    /* Enhanced text visibility on small screens */
+    /* Enhanced text visibility on small screens - match service-item colors */
     h1 {
         font-size: 2rem;
         color: var(--primary-color);
@@ -2087,7 +2072,6 @@ p {
     h2 {
         font-size: 1.6rem;
         color: var(--primary-color);
-        text-shadow: 0 1px 4px rgba(0, 44, 95, 0.3);
         font-weight: 700;
     }
     
@@ -2095,7 +2079,6 @@ p {
         font-size: 1.3rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     h4 {
@@ -2108,13 +2091,12 @@ p {
         font-size: 1.05rem;
         color: var(--dark-gray);
         line-height: 1.8;
-        font-weight: 500;
+        font-weight: 400;
     }
     
     .section-header h2 {
         font-size: 1.6rem;
         color: var(--primary-color);
-        text-shadow: 0 1px 4px rgba(0, 44, 95, 0.3);
         font-weight: 700;
         margin-bottom: 1rem;
     }
@@ -2122,7 +2104,7 @@ p {
     .section-header p {
         font-size: 1.05rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
         margin-bottom: 1.5rem;
     }
@@ -2130,20 +2112,19 @@ p {
     .company-subtitle {
         font-size: 0.8rem;
         color: var(--dark-gray);
-        font-weight: 600;
+        font-weight: 500;
     }
     
     .service-item h3 {
         font-size: 1.2rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     .service-item p {
         font-size: 0.95rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
     
@@ -2162,20 +2143,19 @@ p {
     .contact-item p {
         font-size: 0.95rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
     }
     
     .about-text h3 {
         font-size: 1.3rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     .about-text p {
         font-size: 1rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.8;
     }
     
@@ -2188,7 +2168,7 @@ p {
     .feature p {
         font-size: 0.9rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
     
@@ -2196,13 +2176,12 @@ p {
         font-size: 1.5rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     .testimonial p {
         font-size: 0.95rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
     
@@ -2215,7 +2194,7 @@ p {
     .client-info span {
         font-size: 0.85rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
     }
     
     .gallery-overlay h4 {
@@ -2227,20 +2206,19 @@ p {
     .gallery-overlay p {
         font-size: 0.85rem;
         color: rgba(255, 255, 255, 0.9);
-        font-weight: 500;
+        font-weight: 400;
     }
     
     .contact-cta h3 {
         font-size: 1.3rem;
         color: var(--primary-color);
         font-weight: 700;
-        text-shadow: 0 1px 2px rgba(0, 44, 95, 0.2);
     }
     
     .contact-cta p {
         font-size: 1rem;
         color: var(--dark-gray);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.7;
     }
 }
