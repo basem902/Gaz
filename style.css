@@ -43,15 +43,15 @@ body {
 
 /* Dark Mode Variables */
 [data-theme="dark"] {
-    --primary-color: #3a6fa5;
-    --primary-dark: #2a5f95;
+    --primary-color: #4A90E2;
+    --primary-dark: #3a6fa5;
     --secondary-color: #64B5F6;
     --secondary-light: #90CAF9;
     --accent-color: #ff7849;
     --white: #1a1a1a;
     --light-gray: #2d2d2d;
     --medium-gray: #404040;
-    --dark-gray: #cccccc;
+    --dark-gray: #b0b0b0;
     --text-dark: #ffffff;
     --border-color: #404040;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -59,7 +59,7 @@ body {
     --text-color: #ffffff;
     --bg-color: #1a1a1a;
     --card-bg: #2d2d2d;
-    --gradient-primary: linear-gradient(135deg, #3a6fa5 0%, #2a5f95 100%);
+    --gradient-primary: linear-gradient(135deg, #4A90E2 0%, #3a6fa5 100%);
     --gradient-secondary: linear-gradient(135deg, #64B5F6 0%, #90CAF9 100%);
 }
 
@@ -2237,5 +2237,214 @@ p {
     body {
         font-size: 12pt;
         line-height: 1.4;
+    }
+}
+
+/* Dark Mode Mobile Optimizations */
+@media (max-width: 768px) {
+    [data-theme="dark"] h1 {
+        color: #4A90E2;
+        text-shadow: 0 2px 4px rgba(74, 144, 226, 0.4);
+    }
+    
+    [data-theme="dark"] h2 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] h4 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .hero-title {
+        color: #4A90E2;
+        text-shadow: 0 2px 4px rgba(74, 144, 226, 0.4);
+    }
+    
+    [data-theme="dark"] .hero-subtitle {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .section-header h2 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .section-header p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .company-subtitle {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .service-item h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .service-item p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .footer-logo h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .contact-item h4 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .contact-item p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .about-text h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .about-text p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .feature h4 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .feature p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .testimonials-section h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .testimonial p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .client-info h4 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .client-info span {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .contact-cta h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .contact-cta p {
+        color: #b0b0b0;
+    }
+}
+
+@media (max-width: 480px) {
+    [data-theme="dark"] h1 {
+        color: #4A90E2;
+        text-shadow: 0 2px 6px rgba(74, 144, 226, 0.5);
+    }
+    
+    [data-theme="dark"] h2 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] h4 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .hero-title {
+        color: #4A90E2;
+        text-shadow: 0 2px 6px rgba(74, 144, 226, 0.5);
+    }
+    
+    [data-theme="dark"] .hero-subtitle {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .section-header h2 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .section-header p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .company-subtitle {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .service-item h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .service-item p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .footer-logo h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .contact-item h4 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .contact-item p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .about-text h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .about-text p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .feature h4 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .feature p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .testimonials-section h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .testimonial p {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .client-info h4 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .client-info span {
+        color: #b0b0b0;
+    }
+    
+    [data-theme="dark"] .contact-cta h3 {
+        color: #4A90E2;
+    }
+    
+    [data-theme="dark"] .contact-cta p {
+        color: #b0b0b0;
     }
 } 
