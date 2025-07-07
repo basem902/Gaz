@@ -12,7 +12,7 @@ for /f %%i in ('powershell -Command "Get-Date -Format yyyy-MM-dd_HH:mm:ss"') do 
 git commit -m "تحديث تلقائي %timestamp%"
 
 :: رفع التعديلات
-git push origin master
+git push origin main
 
 echo ✅ تم التحديث بنجاح!
 pause
