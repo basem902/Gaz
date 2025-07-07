@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yourwebsite.com/sitemap.xml
+
+# Disallow specific files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+
+# Allow important files
+Allow: /style.css
+Allow: /script.js
+Allow: /manifest.json
+
+# Crawl delay (optional)
+Crawl-delay: 1 
