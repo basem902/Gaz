@@ -410,47 +410,22 @@ p {
 
 /* Hero Title Dark Mode */
 [data-theme="dark"] h1 {
-    background: var(--gradient-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 3px 6px rgba(100, 181, 246, 0.6);
-    filter: drop-shadow(0 4px 8px rgba(100, 181, 246, 0.4));
+    color: #002c5f;
+    text-shadow: 0 3px 6px rgba(0, 44, 95, 0.4);
 }
 
 /* Section Headers Dark Mode */
 [data-theme="dark"] .section-header h2 {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 2px 4px rgba(102, 187, 106, 0.4);
+    color: #002c5f;
 }
 
 [data-theme="dark"] .section-header p {
-    background: var(--gradient-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 2px 4px rgba(100, 181, 246, 0.5);
-    background-color: rgba(0, 0, 0, 0.4);
-    border-left: 4px solid var(--primary-color);
+    color: #495057;
 }
 
 /* About Text Dark Mode */
 [data-theme="dark"] .about-text p {
-    background: var(--gradient-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-left: 5px solid var(--primary-color);
-    text-shadow: 0 2px 4px rgba(100, 181, 246, 0.5);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-[data-theme="dark"] .about-text p::before {
-    background: linear-gradient(45deg, transparent 0%, rgba(100, 181, 246, 0.15) 50%, transparent 100%);
+    color: #495057;
 }
 
 .nav-menu {
@@ -1918,7 +1893,6 @@ p {
         font-size: 1.6rem;
         color: var(--primary-color);
         font-weight: 700;
-        margin-bottom: 1rem;
     }
     
     .section-header p {
@@ -2243,208 +2217,208 @@ p {
 /* Dark Mode Mobile Optimizations */
 @media (max-width: 768px) {
     [data-theme="dark"] h1 {
-        color: #4A90E2;
-        text-shadow: 0 2px 4px rgba(74, 144, 226, 0.4);
+        color: #002c5f;
+        text-shadow: 0 2px 4px rgba(0, 44, 95, 0.4);
     }
     
     [data-theme="dark"] h2 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] h4 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .hero-title {
-        color: #4A90E2;
-        text-shadow: 0 2px 4px rgba(74, 144, 226, 0.4);
+        color: #002c5f;
+        text-shadow: 0 3px 6px rgba(0, 44, 95, 0.4);
     }
     
     [data-theme="dark"] .hero-subtitle {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .section-header h2 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .section-header p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .company-subtitle {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .service-item h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .service-item p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .footer-logo h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .contact-item h4 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .contact-item p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .about-text h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .about-text p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .feature h4 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .feature p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .testimonials-section h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .testimonial p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .client-info h4 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .client-info span {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .contact-cta h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .contact-cta p {
-        color: #b0b0b0;
+        color: #495057;
     }
 }
 
 @media (max-width: 480px) {
     [data-theme="dark"] h1 {
-        color: #4A90E2;
-        text-shadow: 0 2px 6px rgba(74, 144, 226, 0.5);
+        color: #002c5f;
+        text-shadow: 0 2px 6px rgba(0, 44, 95, 0.5);
     }
     
     [data-theme="dark"] h2 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] h4 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .hero-title {
-        color: #4A90E2;
-        text-shadow: 0 2px 6px rgba(74, 144, 226, 0.5);
+        color: #002c5f;
+        text-shadow: 0 2px 6px rgba(0, 44, 95, 0.5);
     }
     
     [data-theme="dark"] .hero-subtitle {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .section-header h2 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .section-header p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .company-subtitle {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .service-item h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .service-item p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .footer-logo h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .contact-item h4 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .contact-item p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .about-text h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .about-text p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .feature h4 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .feature p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .testimonials-section h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .testimonial p {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .client-info h4 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .client-info span {
-        color: #b0b0b0;
+        color: #495057;
     }
     
     [data-theme="dark"] .contact-cta h3 {
-        color: #4A90E2;
+        color: #002c5f;
     }
     
     [data-theme="dark"] .contact-cta p {
-        color: #b0b0b0;
+        color: #495057;
     }
 } 
